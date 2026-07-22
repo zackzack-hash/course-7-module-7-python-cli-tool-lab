@@ -4,7 +4,7 @@ import sys
 
 # Support running directly or as a module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 try:
     from lib.models import Task, User
 except ModuleNotFoundError:
